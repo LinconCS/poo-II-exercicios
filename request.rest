@@ -1,0 +1,32 @@
+GET http://localhost:3003/ping
+### 
+
+GET http://localhost:3003/videos
+###
+
+POST http://localhost:3003/videos
+Content-Type: application/json
+
+{
+  "id": "v004",
+  "title": "Aula POO IV",
+  "duration": 1200
+}
+###
+
+PUT http://localhost:3003/videos/v004
+Content-Type: application/json
+
+{
+    "newId": "v004",
+    "newTitle": "Aula POO Complementar",
+    "newDuration": 1000
+}
+###
+
+DELETE http://localhost:3003/videos/v004
+Content-Type: application/json
+###
+
+
+
